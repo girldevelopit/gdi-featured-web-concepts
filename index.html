@@ -94,15 +94,6 @@
 		          </ul>
 		        </section>
 
-                <section>
-                    <h3>Tell us about yourself</h3>
-                    <ul>
-                        <li>Who are you?</li>
-                        <li>What do you do at Stack Overflow?</li>
-                        <li>What is your favorite breakfast food?</li>
-                    </ul>
-                </section>
-
 			<!-- How does the Internet Work -->
 	        <section>
 	          <h2>What is the world wide web?</h2>
@@ -131,9 +122,9 @@
 
 				<section>
 					<h3>Step 2: Your computer performs a DNS lookup</h3>
-					<p>Each website has a unique code, called an IP address, that is like a phone number.<p>
-					<p>DNS, or Domain Name Servers, are like phone books. The DNS servers will connect you to the right server.</p>
-					<p style = "font-size:2em%; height:100%; margin-top:2em;" class ="blue">girldevelopit.com &rarr; 205.178.189.129</p>
+					<p>Each website has a unique code, called an IP address, like a street address.<p>
+					<p>A good way to think of the basics of how the web works is to think of a restaruant.</p>
+					<p>Think of the web site and the IP address as the address of a restaurant.</p>
 					<aside class="notes">
 						<p>DNS Servers are spread throughout the world.</p>
 						<p>Your ISP, like Comcast or Time Warner Cable, probably provides your DNS server.</p>
@@ -144,22 +135,24 @@
 				<section>
 					<h3>Step 3: Your computer connects to the server</h3>
 					<p>Your computer uses the IP address to find the correct web server and sends a request for a page.</p>
+					<p>A DNS lookup is like using your GPS to find a restaurant. A DNS lookup gives your computer directions on how to find the server that hosts the website you are looking for.</p>
 					<aside class="notes">
 						<p>Your browser will send a different request for each file.</p>
 					</aside>
 				</section>
 
 				<section>
-					<h3>Step 4: The server reponds to your request</h3>
-					<p>The server processes your request and finds the right files. Sometimes it has to "compile" a page from code and other sources, like a database.</p>
+					<h3>Step 4: Your computer requests information from the server.</h3>
+					<p>You're at the restaurant and your server comes to your table. "What would you like today?"</p>
+					<p>"Hello! I would like your finest HyperText Machine Language(HTML) with a side of CSS and JavaScript"</p>
 					<aside class="notes">
 						<p>Back-end languages often talk to databases</p>
 					</aside>
 				</section>
 
 				<section>
-					<h3>Step 5: The server sends your computer the files</h3>
-					<p>This is usually an HTML page, with some CSS, JavaScript, or media files.</p>
+					<h3>Step 5: The server gets your computer's the request</h3>
+					<p>The kitchen (server) uses serverside code (like Ruby on Rails, C#, Python) and a database (SQL Server, MongoDB) to cronch the data you want and send it back to you.</p>
 					<img src="images/mailbox.jpg" alt="Mailbox" />
 					<p><small>Photo credit <a href="http://www.flickr.com/photos/53326337@N00/4384851676">Envelope</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">cc</a></small></p>
 					<aside class="notes">
@@ -169,8 +162,18 @@
 				</section>
 
 				<section>
+						<h3>Step 6: The server sends its repsonse over HTTP</h3>
+						<p>The server converts its response to HTML/CSS and JavaScript so that your browser can understand it and sends it back to your computer.</p>
+						<img src="images/mailbox.jpg" alt="Mailbox" />
+						<p><small>Photo credit <a href="http://www.flickr.com/photos/53326337@N00/4384851676">Envelope</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">cc</a></small></p>
+						<aside class="notes">
+							<p>Each files comes a separate request</p>
+							<p>Requests are packaged into packets</p>
+						</aside>
+					</section>
+				<section>
 					<h3>Step 6: Your browser displays the page</h3>
-					<p>Your browser interprets the code and assembles all the files into a page you can see and use. Each browser does this slightly differently.</p>
+					<p>Your browser interprets the code and assembles all the files into a page you can see and use. Doesn't that taste delicious?</p>
 					<img src="images/hello.jpg" alt="Hello in many languages" />
 					<p><small>Photo credit <a href="http://www.flickr.com/photos/27439865@N05/3977313856">Hola</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">cc</a></small></p>
 					<aside class="notes">
