@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 	<head>
@@ -86,12 +86,14 @@
 
 		        <section>
 		          <h2>What to expect</h2>
-		          <ul>
-		            <li>This is a survey of a very broad topic</li>
-		            <li>Get a sense of what you'd like to know more about</li>
-		            <li>I don't know everything, and neither will you</li>
-		            <li>Have fun! (and ask questions)</li>
-		          </ul>
+                  <ul>
+                      <li>This is a survey of a very broad topic</li>
+                      <li>Get a sense of what you'd like to know more about</li>
+                      <li>Write some code and see it working in your browser</li>
+                      <li>I don't know everything, and neither will you</li>
+                      <li>Have fun! (and ask questions)</li>
+                      <li>Expect a survey following the class to determine what you'd like to learn next!</li>
+                  </ul>
 		        </section>
 
 			<!-- How does the Internet Work -->
@@ -113,7 +115,7 @@
 
 				<section>
 					<h3>Step 1: Type an address into the address bar</h3>
-					<img src="images/step-1.png" alt="Typing girldevelopit.com into an address bar" />
+					<img src="images/browser-address-bar.jpg" alt="Typing into an address bar" />
 					<aside class="notes">
 						<p>Browser starts the process on your behalf.</p>
 						<p>We're skipping or condensing steps for clarity.</p>
@@ -123,7 +125,8 @@
 				<section>
 					<h3>Step 2: Your computer performs a DNS lookup</h3>
 					<p>Each website has a unique code, called an IP address, like a street address.<p>
-					<p>A good way to think of the basics of how the web works is to think of a restaruant.</p>
+                     <img src="images/restaurant_address.jpg" style="width:450px" alt="Front of restaurant" />
+                     <p>A good way to think of the basics of how the web works is to think of a restaurant.</p>
 					<p>Think of the web site and the IP address as the address of a restaurant.</p>
 					<aside class="notes">
 						<p>DNS Servers are spread throughout the world.</p>
@@ -132,29 +135,32 @@
 					</aside>
 				</section>
 
-				<section>
-					<h3>Step 3: Your computer connects to the server</h3>
-					<p>Your computer uses the IP address to find the correct web server and sends a request for a page.</p>
-					<p>A DNS lookup is like using your GPS to find a restaurant. A DNS lookup gives your computer directions on how to find the server that hosts the website you are looking for.</p>
-					<aside class="notes">
-						<p>Your browser will send a different request for each file.</p>
-					</aside>
-				</section>
+                <section>
+                    <h3>Step 3: Your computer connects to the server</h3>
+                    <p>Your computer uses the IP address to find the correct web server and sends a request for a page.</p>
+                    <img src="images/gps-location-tracking-device.png" alt="GPS Image" />
+                    <p>A DNS lookup is like using your GPS to find a restaurant.</p>
+                    <p>A DNS lookup gives your computer directions on how to find the server that hosts the website you are looking for.</p>
+                    <aside class="notes">
+                        <p>Your browser will send a different request for each file.</p>
+                    </aside>
+                </section>
 
-				<section>
-					<h3>Step 4: Your computer requests information from the server.</h3>
-					<p>You're at the restaurant and your server comes to your table. "What would you like today?"</p>
-					<p>"Hello! I would like your finest HyperText Machine Language(HTML) with a side of CSS and JavaScript"</p>
-					<aside class="notes">
-						<p>Back-end languages often talk to databases</p>
-					</aside>
-				</section>
+                <section>
+                    <h3>Step 4: Your computer requests information from the server.</h3>
+                    <img src="images/waiter-take-order.jpg" alt="Waiter taking an order" />
+                    <p>You're at the restaurant and your server comes to your table. "What would you like today?"</p>
+                    <p>"Hello! I would like your finest HyperText Machine Language(HTML) with a side of CSS and JavaScript"</p>
+                    <aside class="notes">
+                        <p>Back-end languages often talk to databases</p>
+                    </aside>
+                </section>
 
 				<section>
 					<h3>Step 5: The server gets your computer's the request</h3>
-					<p>The kitchen (server) uses serverside code (like Ruby on Rails, C#, Python) and a database (SQL Server, MongoDB) to cronch the data you want and send it back to you.</p>
-					<img src="images/mailbox.jpg" alt="Mailbox" />
-					<p><small>Photo credit <a href="http://www.flickr.com/photos/53326337@N00/4384851676">Envelope</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">cc</a></small></p>
+					<p>The kitchen (server) uses serverside code </p>
+                    <p>and a database to crunch the data you want and prepare to send it back to you.</p>
+					<img src="images/restaurant-kitchen-chefs.jpg" style="width:450px" alt="Chefs in kitchen" />
 					<aside class="notes">
 						<p>Each files comes a separate request</p>
 						<p>Requests are packaged into packets</p>
@@ -164,8 +170,7 @@
 				<section>
 						<h3>Step 6: The server sends its repsonse over HTTP</h3>
 						<p>The server converts its response to HTML/CSS and JavaScript so that your browser can understand it and sends it back to your computer.</p>
-						<img src="images/mailbox.jpg" alt="Mailbox" />
-						<p><small>Photo credit <a href="http://www.flickr.com/photos/53326337@N00/4384851676">Envelope</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">cc</a></small></p>
+						<img src="images/waiter-delivering.jpg" alt="Waiter delivering food" />
 						<aside class="notes">
 							<p>Each files comes a separate request</p>
 							<p>Requests are packaged into packets</p>
@@ -174,8 +179,7 @@
 				<section>
 					<h3>Step 6: Your browser displays the page</h3>
 					<p>Your browser interprets the code and assembles all the files into a page you can see and use. Doesn't that taste delicious?</p>
-					<img src="images/hello.jpg" alt="Hello in many languages" />
-					<p><small>Photo credit <a href="http://www.flickr.com/photos/27439865@N05/3977313856">Hola</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">cc</a></small></p>
+					<img src="images/ice-cream-site.jpg" alt="Ice Cream Website" />
 					<aside class="notes">
 						<p>Browser also runs JavaScript</p>
 					</aside>
@@ -203,11 +207,10 @@
 			        	<div class="left-align">
 			            	<p class="fragment"><strong>HTML</strong>: Hyper Text Markup Language - The code structure used to convey the content of a web site</p>
 			            	<p class="fragment"><strong>CSS</strong>: Cascading Style Sheets - A language used to describe the presentation of the content</p>
-			            	<p class="fragment"><strong>WYSIWYG</strong>: What You See Is What You Get - A type of editing software meant to be used by those who don't know how to code</p>
+			            	<p class="fragment"><strong>JavaScript</strong>: Coding Language that is read by browsers and can animate web pages and populate data</p>
 			          	</div>
 			        <aside class="notes">
 			            <ul>
-			            	<li>WYSIWYG - Dreamweaver is the most common example</li>
 			            </ul>
 			        </aside>
 		        </section>
@@ -389,21 +392,6 @@
 		        <section>
 		          	<h2>Building a web site</h2>
 		          	<img src="images/builder-kitty.jpg" alt="Builder kitty" />
-		        </section>
-
-		        <section>
-		         	<h3>Considerations before building</h3>
-		          	<ul>
-		            	<li class="fragment">What is the purpose of the site?</li>
-		            	<li class="fragment">Hosting and a domain name
-		              	<ul class="fragment">
-		                	<li>Domain name registration should not cost more than $15/yr</li>
-		                	<li>Hosting costs depend on the type of website you're creating (ex. small personal websites should not cost more than $60 annually to host)</li>
-		                	<li>Hosting choices may depend on supported server-side tech</li>
-		              	</ul>
-		            	</li>
-		            	<li class="fragment">Whether to build it yourself or hire someone</li>
-		          	</ul>
 		        </section>
 
                 <section>
@@ -642,26 +630,6 @@
 							</li>
 						</ul>
 					</section>
-
-			        <section>
-			          	<h3>How to hire a developer</h3>
-			          	<p class="left-align">Remember the three Rs:</p>
-			          	<ul>
-				            <li class="fragment"><strong>References</strong>: Talk to people who have worked with the developer before. Were they prompt? Pleasant? Forthright?</li>
-				            <li class="fragment"><strong>Requirements</strong>: Can they do the work that needs to be done. Ask for samples of their prior work and ask exactly which parts of the process they were responsible for. Design? UX? DB architecture? QA?</li>
-				            <li class="fragment"><strong>Reality</strong>: If it sounds too good to be true, it probably is. This website will be a reflection of you, either personally or professionally. Hire someone you feel will be invested in a job well done.</li>
-			          	</ul>
-			        </section>
-
-			        <section>
-			        	<h3>How to be hired as a developer</h3>
-			          	<ul>
-				            <li>Degrees and certifications: they don't hurt</li>
-				            <li class="fragment">Be curious, a problem solver, and intrepid</li>
-				            <li class="fragment">Build things. For yourself, if no one will pay you</li>
-				            <li class="fragment">Through all of this, learn your craft and how things work</li>
-			          	</ul>
-			        </section>
 
 			        <section>
 			          	<h2>Questions?</h2>
